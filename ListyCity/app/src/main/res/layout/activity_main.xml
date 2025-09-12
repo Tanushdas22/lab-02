@@ -7,14 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Hello World!"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!-- Input field for new city -->
     <EditText
         android:id="@+id/editTextCity"
         android:layout_width="0dp"
@@ -26,6 +19,7 @@
         app:layout_constraintHorizontal_weight="1"
         android:layout_margin="8dp"/>
 
+    <!-- Add city button -->
     <Button
         android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
@@ -35,6 +29,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
         android:layout_margin="8dp"/>
 
+    <!-- Delete city button -->
     <Button
         android:id="@+id/buttonDelete"
         android:layout_width="wrap_content"
@@ -44,6 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="8dp"/>
 
+    <!-- List of cities -->
     <ListView
         android:id="@+id/city_list"
         android:layout_width="0dp"
@@ -54,6 +50,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:choiceMode="singleChoice"
         android:listSelector="@android:color/holo_blue_light"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
